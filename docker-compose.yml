@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  recsys:
+    build: .
+    ports:
+      - "5001:5001"
+      - "7860:7860"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
